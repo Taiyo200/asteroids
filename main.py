@@ -22,6 +22,8 @@ def main():
     
     while(True):
         pygame.Surface.fill(screen, (0,0,0))
+        print(dt)
+        player.update(dt)
         
         player.draw(screen)
         
