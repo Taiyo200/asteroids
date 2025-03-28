@@ -50,7 +50,7 @@ def main():
             for bullet in shots_container:
                 if bullet.collisions(asteroid):
                     bullet.kill()
-                    asteroid.kill()
+                    asteroid.split()
             
         shots_container.update(dt)
         for shot in shots_container:
