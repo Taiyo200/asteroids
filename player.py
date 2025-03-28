@@ -35,3 +35,7 @@ class Player(CircleShape):
             self.move(dt)
         if keys[pygame.K_s]:
             self.move(-dt)
+            
+class Shoot(CircleShape):
+    def __init__(self, x, y, SHOT_RADIUS):
+        super().__init__(x, y, SHOT_RADIUS)

@@ -40,6 +40,12 @@ def main():
         print(dt)
         
         updateable_container.update(dt)
+        
+        for asteroids in asteroids_container:
+            if player.collisions(asteroids):
+                print("Game over!")
+                return
+        
         for drawable in drawable_container:
             drawable.draw(screen)
         
